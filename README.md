@@ -15,5 +15,27 @@ This is the replication package for ICSE submission, containing both tool and da
 - /CFGDetector: The implementation of CFGDetector
 
 ## Requirements
+- Java >= 17
 
 ## How to Replicate the Evaluation
+
+   1. **Import project**
+
+      `Go to *File* -> *open*`
+
+      Browse to the `CFGDetector` directory
+
+      `Click *OK* -> *Trust Project*`
+  
+   2. **Run the experiment**
+
+       If you want to start the replication for ChatGPT-4o, run `test/java/chatGPT/queryGPT4oTest.java` 
+       
+       If you want to start the replication for ChatGPT-o1, run `test/java/chatGPT/queryGPTo1Test.java` 
+       
+       You need to modify several variables in the code:
+       
+       - `apiKey` to your ChatGPT API Key.
+       - `pathToTheDataset` to the path where the dataset files are located.
+
+       If you want to start the replication for CFGDetector, run `test/java/CFGDetector/test.java` 
